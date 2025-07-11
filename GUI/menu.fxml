@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GUI.MenuController"
+      spacing="20" alignment="TOP_CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+
+    <Label text="Lista de Tarefas"
+           style="-fx-font-size: 26px; -fx-font-family: 'Segoe UI Light'; -fx-text-fill: #000000;"/>
+
+
+    <HBox spacing="10">
+        <TextField fx:id="campoNovaTarefa" promptText="Digite sua tarefa..." HBox.hgrow="ALWAYS"/>
+        <Button fx:id="btnAdicionar" text="Adicionar" onAction="#adicionarTarefa"
+                style="-fx-background-color: #e0e0e0; -fx-text-fill: #333333;
+                       -fx-font-size: 14px; -fx-cursor: hand; -fx-background-radius: 8;"/>
+    </HBox>
+
+    <!-- Filtros -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Filtro:" style="-fx-font-weight: bold; -fx-font-size: 14px;"/>
+        <Button fx:id="btnTodas" text="Todas" onAction="#filtrarTodas"
+                style="-fx-background-color: #e0e0e0; -fx-text-fill: #333333;
+                       -fx-font-size: 14px; -fx-cursor: hand; -fx-background-radius: 8;"/>
+        <Button fx:id="btnPendentes" text="Pendentes" onAction="#filtrarPendentes"
+                style="-fx-background-color: #e0e0e0; -fx-text-fill: #333333;
+                       -fx-font-size: 14px; -fx-cursor: hand; -fx-background-radius: 8;"/>
+        <Button fx:id="btnConcluidas" text="Concluidas" onAction="#filtrarConcluidas"
+                style="-fx-background-color: #e0e0e0; -fx-text-fill: #333333;
+                       -fx-font-size: 14px; -fx-cursor: hand; -fx-background-radius: 8;"/>
+    </HBox>
+
+    <TableView fx:id="tabelaTarefas" prefHeight="300" prefWidth="600"
+               xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colTexto" text="Descrição" prefWidth="250"/>
+            <TableColumn fx:id="colStatus" text="Status" prefWidth="100"/>
+            <TableColumn fx:id="colData" text="Data Alteração" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+
+    <Button fx:id="btnMarcarConcluida" text="Marcar como Concluída" onAction="#marcarConcluida"
+            style="-fx-background-color: #e0e0e0; -fx-text-fill: #333333;
+                   -fx-font-size: 14px; -fx-cursor: hand; -fx-background-radius: 8;"/>
+</VBox>
