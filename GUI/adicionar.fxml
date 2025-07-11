@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="GUI.AdicionarController"
+      alignment="CENTER"
+      spacing="20">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Tarefa adicionada!" style="-fx-font-size: 16px; -fx-font-family: 'Segoe UI Light'; -fx-text-fill: #000000;"/>
+    <Button fx:id="okButton" text="OK" onAction="#fechar"
+            style="-fx-background-color: #e0e0e0; -fx-text-fill: #333333; -fx-font-size: 14px; -fx-background-radius: 8;"/>
+</VBox>
