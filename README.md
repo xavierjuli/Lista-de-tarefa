@@ -26,12 +26,7 @@ src/
 │   ├── DBTarefa.java
 │   └── DBConnection.java
 ├── model/          
-│   └── Tarefa.java
-└── test/             
-    ├── database/
-    │   └── DBTarefaTest.java
-    └── GUI/
-        └── MainAppTest.java
+    └── Tarefa.java
 ```
     
 ##### Funcionalidades
