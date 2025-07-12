@@ -32,7 +32,7 @@ Name: MainAPP
 Main class: GUI.MainApp
 
 Working directory: diretório raiz do projeto
-VM options:  --module-path=lib --add-modules=javafx.controls,javafx.fxml -Djava.library.path=lib
+VM options:--module-path "lib" --add-modules javafx.controls,javafx.fxml --enable-native-access=javafx.graphics -Djava.library.path="lib\bin"
 
 Clique em "Apply" e depois em "Ok"
 ```
