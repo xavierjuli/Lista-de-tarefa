@@ -1,4 +1,4 @@
-#Lista de tarefas
+# Lista de tarefas
 
 > Este projeto utiliza o JavaFX SDK 24, compatível com Java 17 ou superior
 
