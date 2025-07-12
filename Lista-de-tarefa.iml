@@ -9,6 +9,24 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="library" exported="" name="sqlite-jdbc-3.50.2.0" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="module-library" exported="">
+              <library name="JavaFX SDK 24.0.1">
+                <CLASSES>
+                  <root url="jar://$MODULE_DIR$/lib/javafx.base.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx.controls.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx.fxml.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx.graphics.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx.media.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx.swing.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx.web.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/javafx-swt.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/jdk.jsobject.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/jfx.incubator.input.jar!/" />
+                  <root url="jar://$MODULE_DIR$/lib/jfx.incubator.richtext.jar!/" />
+                </CLASSES>
+                <JAVADOC />
+                <SOURCES />
+              </library>
+    </orderEntry>
   </component>
 </module>
