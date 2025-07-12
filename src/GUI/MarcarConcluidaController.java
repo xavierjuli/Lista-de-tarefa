@@ -1,7 +1,7 @@
 package GUI;
 
 import model.Tarefa;
-import service.TarefaService;
+import database.TarefaService;
 
 public class MarcarConcluidaController {
 
