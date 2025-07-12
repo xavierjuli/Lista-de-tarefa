@@ -1,4 +1,7 @@
-# Lista de tarefas
+#Lista de tarefas
+
+> Este projeto utiliza o JavaFX SDK 24, compatível com Java 17 ou superior
+
 Aplicativo simples de lista de tarefas desenvolvido com JavaFX e integração com banco de dados SQLite. 
 O código permite adicionar tarefas, atualizar seu status (pendente/concluída) e listar itens de forma dinâmica.
 As funcionalidades foram exibidas com interface JavaFX para maior usabilidade.
@@ -6,36 +9,30 @@ Ideal para praticar conceitos de interface gráfica, persistência de dados, e J
 
 
 ## Como executar
-- Java 11 ou superior
-- JavaFX configurado no projeto
-- IDE como IntelliJ, Eclipse, ou NetBeans
-- SQLite ou JDBC incluído como dependência
 
-### Execução
-1. Clone ou baixe o projeto.
-2. Execute a classe GUI.MainApp como aplicação JavaFX.
-3. A interface será exibida com o título "Lista de Tarefas".
+Para executar pelo Terminal use o MainTerminal, contido na pasta "service"
 
-#### Estrutura do prjeto
+Para executar a interface gráfica, use o MainApp, contido na pasta "GUI". Porém antes é necessário configurar o IntelliJ 
+
+
+##Configuração no ambiente do IntelliJ 
+
+### Adicionar  bibliotecas (JavaFX e SQLite)
+Acesse File > Project Structure 
+Vá em Modules > Dependencies
+Clique em + > JARs or directories
+Adicione todos os arquivos .jar da pasta: lib\
+
+## Configurar o Run Configuration para a interface Gráfica 
+No IntelliJ, vá no menu:
+Run > Edit Configurations
+Clique no botão + para criar uma nova configuração e escolha Application.
+Configure da seguinte forma:
+Name: MainAPP
+Main class: GUI.MainApp
+
+Working directory: diretório raiz do projeto
+VM options:  --module-path=lib --add-modules=javafx.controls,javafx.fxml -Djava.library.path=lib
+
+Clique em "Apply" e depois em "Ok"
 ```
-src/
-├── GUI/             
-│   ├── MainApp.java
-│   └── menu.fxml
-├── database/         
-│   ├── DBTarefa.java
-│   └── DBConnection.java
-├── model/          
-    └── Tarefa.java
-```
-    
-##### Funcionalidades
-[x] Criar tarefas com descrição e status
-
-[x] Salvar dados no banco SQLite
-
-[x] Atualizar status da tarefa
-
-[x] Listar tarefas por categoria 
-
-[x] Interface com JavaFX
