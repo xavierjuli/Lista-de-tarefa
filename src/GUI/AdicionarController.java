@@ -8,7 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import service.TarefaService;
+import database.TarefaService;
 
 public class AdicionarController {
     private final TarefaService tarefaService = new TarefaService();
