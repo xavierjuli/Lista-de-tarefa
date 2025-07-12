@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import service.TarefaService;
+import database.TarefaService;
 
 public class MenuTerminal {
     //somente mostra o menu em loop para o terminal
