@@ -7,7 +7,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Tarefa;
-import service.TarefaService;
+import database.TarefaService;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
