@@ -6,8 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="JavaFXLib" level="project" />
     <orderEntry type="library" exported="" name="sqlite-jdbc-3.50.2.0" level="project" />
-    <orderEntry type="library" exported="" name="javafx-swt" level="project" />
+    <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
