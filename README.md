@@ -17,18 +17,22 @@ Ideal para praticar conceitos de interface gráfica, persistência de dados, e J
 3. A interface será exibida com o título "Lista de Tarefas".
 
 #### Estrutura do prjeto
+```
 src/
 ├── GUI/             
-│   └── MainApp.java
+│   ├── MainApp.java
 │   └── menu.fxml
 ├── database/         
-│   └── DBTarefa.java
+│   ├── DBTarefa.java
 │   └── DBConnection.java
 ├── model/          
 │   └── Tarefa.java
 └── test/             
-    └── database/
+    ├── database/
+    │   └── DBTarefaTest.java
     └── GUI/
+        └── MainAppTest.java
+```
     
 ##### Funcionalidades
 [x] Criar tarefas com descrição e status
